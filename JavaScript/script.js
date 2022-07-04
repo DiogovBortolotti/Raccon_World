@@ -3,7 +3,7 @@ const objeto = document.querySelector('.objeto');
 
 
 const pulo = () => {
-    persongem.classList.add('pulo');
+    personagem.classList.add('pulo');
 
     setTimeout(() => {
         personagem.classList.remove('pulo');
@@ -23,13 +23,13 @@ const interacao_cenario_loop = setInterval(() =>{
         personagem.style.left = `${personagemPosicao}px`;
 
         personagem.src ='./imagens/morreu.png';        
-        personagem.style.width = '75px';
-        personagem.style.marginLeft ='50px';
+        personagem.style.width = '11rem';
+        personagem.style.marginLeft ='2rem';
 
         clearInterval(interacao_cenario_loop);
         setTimeout(() => {
             document.location.reload(true)
-        }, 10000);
+        }, 1000);
     }
 },10)
 
