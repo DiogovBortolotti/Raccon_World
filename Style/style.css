@@ -19,18 +19,53 @@
 .objeto{
     position: absolute;
     bottom: 0;
-    width: 5rem;
+    width: 8rem;
+    animation: objeto-animacao 1.5s infinite linear;
 }
 
 .ceu{
     position: absolute;
-    width: 35rem;
+    width: 40rem;
+    animation: ceu-animacao 20s infinite linear;
 }
 
 
 .personagem{
-    width: 8rem;
-
+    width: 11rem;
+    position: absolute;
     bottom: 0;
 }
+
+.pulo{
+    animation: pulo 500ms ease-out;
+}
+
+
+
+@keyframes ceu-animacao{
+    from{
+        right: -40rem;
+    }to{
+        right: 100%;
+    }
+}
+
+
+@keyframes objeto-animacao{
+    from{
+        right: -40rem;
+    }to{
+        right: 100%;
+    }
+}
+
+
+@keyframes pulo{
+    0%{bottom: 0}
+    40%{bottom: 180px}
+    50%{bottom: 180px}
+    60%{bottom: 180px} 
+    100%{bottom: 0px}   
+}
+
 
