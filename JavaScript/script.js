@@ -13,8 +13,13 @@ const interacao_cenario = setInterval(() => {
         personagem.style.animation ='none';
         personagem.style.left ='${personagemPosicao}px';
 
-        personagem.src ='./Imagens/fimdejogo.png'        
-        persongem.style.widht
+        personagem.src ='./Imagens/fimdejogo.png';        
+        persongem.style.widht = '75px';
+        personagem.style.marginleft ='50px';
+
+        clearInterval(interacao_cenario);
+        setTimeout(() => {
+            document.location.reload(true)
+        }, 1000);
     }
-10,
-})
+},10)
